@@ -1,0 +1,12 @@
+<h2 align="center">My Cats</h2>
+
+<div class="grid grid-pad">
+	<a *ngFor="let cat of cats" class="col-1-4" routerLink="/detail/{{cat.id}}">
+		<div class="module cat">
+			<h4>{{cat.name}}</h4>
+		</div>
+	</a>
+</div>
+<div class="newcat">
+	<button routerLink="/add-new-cat" class="buttonfx">+ Add new cat</button>
+</div>

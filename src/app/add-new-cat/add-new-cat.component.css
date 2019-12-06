@@ -1,0 +1,24 @@
+.add-profile{
+	display: flex;
+	flex-flow: column wrap;
+	line-height: 3;
+	justify-content: center;
+	align-items: center;
+}
+button{
+	border-radius: 4px;
+	background-color: #eee;
+	height: 30px;
+	width: 80px;
+	font-size: 17px;
+	margin-top: 20px;
+}
+button:hover {
+	color: #52b304;
+ 	background-color: #cfd8dc;
+}
+h2{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}

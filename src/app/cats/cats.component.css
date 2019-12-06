@@ -1,0 +1,141 @@
+:host {
+	font-family: 'Comfortaa', cursive;
+	font-size: 24px;
+}
+
+.yourcats{
+	padding-top: none
+}
+.newcat{
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+    margin-right: -19px;
+    margin-top: 0.5em;
+}
+.buttonfx{
+  color: black;
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 4px solid #eee;
+  letter-spacing: 0.8000em;
+  padding: 0 10px; 
+  text-transform: uppercase;
+  line-height: 3;
+  position: relative;
+	display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+	text-decoration: none;
+  overflow: hidden;
+  transition: all .5s;
+  font-weight: 700;
+}
+
+.buttonfx:before,
+.buttonfx:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: #52b304;
+  z-index: -1;
+  transform: translate3D(0,-100%,0);
+  transition: all .5s;
+}
+
+.buttonfx:before{
+  background: #fafcd6;
+  z-index: -2;
+  transform: translate3D(0,0,0);
+}
+
+.buttonfx:hover{
+	color: white;
+}
+
+.buttonfx:hover:after{
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+
+[class*='col-'] {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+a {
+  text-decoration: none;
+}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+h3 {
+  text-align: center;
+  margin-bottom: 0;
+}
+h4 {
+  position: relative;
+}
+.grid {
+  margin: 0;
+  display: flex;
+    flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;  
+  margin-right: -14px;
+}
+.col-1-4 {
+  width: 500px;
+}
+.module {
+  padding: 20px;
+  color: #000;
+  max-height: 100px;
+  min-width: 120px;
+  background-color: #eee;
+  border-radius: 2px;
+  vertical-align: middle;
+  box-shadow: 0.4em 0.4em 1em -0.2em gray;
+}
+.module:hover {
+  background-color: #fafcd6;
+  cursor: pointer;
+  color: #607d8b;
+}
+.grid-pad {
+  padding: 10px 0;
+}
+.grid-pad > [class*='col-']:last-of-type {
+  padding-right: 20px;
+}
+@media (max-width: 600px) {
+  .module {
+    font-size: 20px;
+    max-height: 75px; }
+}
+@media (max-width: 1024px) {
+  .grid {
+    margin: 0;
+    margin-right: -4%;
+  }
+  .module {
+    min-width: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .col-1-4 {
+     width: 300px;
+     }
+}

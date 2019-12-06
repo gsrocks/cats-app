@@ -1,0 +1,18 @@
+<h2>Fill the boxes in:</h2>
+<div class="add-profile">
+  <label>Cat name:
+    <input #catName />
+  </label>
+  <label>Age:
+    <input #catAge />
+  </label>
+  <label>Country:
+    <input #catCountry />
+  </label>
+  <label>City:
+    <input #catCity />
+  </label>
+  <button (click)="add(catName.value, catAge.value, catCountry.value, catCity.value); goBack()">
+    Add
+  </button>
+</div>

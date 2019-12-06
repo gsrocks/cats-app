@@ -1,0 +1,26 @@
+<h2>{{ cat.name }} Details</h2>
+<div class="details">
+	<div>
+  	
+  		<div><span>ID: </span>{{cat.id}}</div>
+  		<div class="cin">
+  			 <label>NAME:
+     			<input [(ngModel)]="cat.name" placeholder="name"/>
+    		</label>
+    		<label>AGE:
+     			<input [(ngModel)]="cat.age" placeholder="age"/>
+    		</label>
+    		<label>COUNTRY:
+     			<input [(ngModel)]="cat.country" placeholder="country"/>
+    		</label>
+    		<label>CITY:
+     			<input [(ngModel)]="cat.city" placeholder="city"/>
+    		</label>
+  		</div>
+      <div class="back-save">
+        <button (click)="goBack()">Go back</button>
+        <button (click)="save()">Save</button>
+      </div>
+	
+  </div>
+</div>
